@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="../js/controller.js"></script>
+</head>
+<body>
+<h1>Welcome to the HelloWorld!!</h1>
+<h1 th:text="${host}">index World</h1>
+<div class="am-u-sm-12 am-u-md-12">
+    <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-12 am-margin-vertical-xs">
+            <div class="am-u-sm-12 am-u-md-6 am-u-md-push-3">
+                <input type="text" class="am-form-field" ng-model="task_name" placeholder="模型名称"/>
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-12 am-margin-vertical-xs">
+            <div class="am-u-sm-12 am-u-md-2 am-u-md-push-3 am-input-group am-input-group-sm">
+                <input type="text" class="am-form-field" ng-model="log_line" placeholder="日志行数"/>
+                <p class="am-form-help">显示日志的行数</p>
+            </div>
+            <div class="am-u-sm-12 am-u-md-2 am-u-md-pull-3">
+                <button class="am-btn am-btn-default am-btn-block" type="button" ng-click="search()">获取模型信息</button>
+            </div>
+        </div>
+    </div>
+</div>
+<h3>{{status}} </h3>
+</body>
+</html>
